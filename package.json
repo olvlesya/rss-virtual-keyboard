@@ -1,0 +1,28 @@
+{
+  "name": "RSS-Virtual-Keyboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/index.scss dist/index.css",
+    "test": "eslint --ext .js src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olvlesya/RSS-Virtual-Keyboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olvlesya/RSS-Virtual-Keyboard/issues"
+  },
+  "homepage": "https://github.com/olvlesya/RSS-Virtual-Keyboard#readme",
+  "dependencies": {
+    "sass": "^1.26.5"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}
