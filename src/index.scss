@@ -1,7 +1,60 @@
-.test {
-  color: red;
+$keyboard_main_color: rgb(241, 237, 237);
+$gradientFrom: #1d1c1c;
+$gradientTo: #534b4b;
 
-  &__1 {
-    color: white;
+.keyboard {
+  margin: 0 auto;
+  background-color: $keyboard_main_color;
+  width: 906px;
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    clear: both;
   }
+  &__key {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    margin-right: 5px;
+    background: linear-gradient(to top, $gradientFrom, $gradientTo);
+    box-shadow: -1px 0px rgb(31, 30, 29), -1px 1px rgb(82, 80, 70);
+    border: 0;
+    font-size: 12px;
+    position: relative;
+
+    sup {
+      font-size: 10px;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+
+    &_active {
+      transform: scale(0.95);
+      background: linear-gradient(
+        to top,
+        lighten($gradientFrom, 10%),
+        lighten($gradientTo, 10%)
+      );
+    }
+    &-shift {
+      width: 110px;
+    }
+
+    &-space {
+      width: 380px;
+    }
+  }
+}
+.input {
+  width: 680px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
 }

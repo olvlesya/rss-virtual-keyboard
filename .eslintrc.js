@@ -3,9 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: [
-    'airbnb-base',
-  ],
+  extends: ['airbnb-base'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -14,5 +12,6 @@ module.exports = {
     ecmaVersion: 11,
   },
   rules: {
+    'max-classes-per-file': 'off',
   },
 };

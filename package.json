@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "sass src/index.scss dist/index.css",
+    "watch": "sass src/index.scss dist/index.css --watch",
     "test": "eslint --ext .js src/"
   },
   "repository": {
