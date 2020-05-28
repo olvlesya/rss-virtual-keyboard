@@ -1,0 +1,51 @@
+.keyboard {
+  margin: 0 auto;
+  background-color: #f1eded;
+  width: 906px;
+}
+.keyboard__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  clear: both;
+}
+.keyboard__key {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  margin-right: 5px;
+  background: linear-gradient(to top, #1d1c1c, #534b4b);
+  box-shadow: -1px 0px #1f1e1d, -1px 1px #525046;
+  border: 0;
+  font-size: 12px;
+  position: relative;
+}
+.keyboard__key sup {
+  font-size: 10px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.keyboard__key_active {
+  transform: scale(0.95);
+  background: linear-gradient(to top, #373535, #6e6363);
+}
+.keyboard__key-shift {
+  width: 110px;
+}
+.keyboard__key-space {
+  width: 380px;
+}
+
+.input {
+  width: 680px;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=index.css.map */
